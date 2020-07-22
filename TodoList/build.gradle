@@ -17,9 +17,9 @@ bootWar {
 //	enabled=true
 //}
 
-bootJar {
-	mainClassName = 'com.todolist.TodoList.TodoListApplication'
-}
+//bootJar {
+//	mainClassName = 'com.todolist.TodoList.TodoListApplication'
+//}
 
 
 group = 'com.todolist'

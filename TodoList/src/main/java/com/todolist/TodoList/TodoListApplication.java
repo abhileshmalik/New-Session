@@ -2,10 +2,17 @@ package com.todolist.TodoList;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class TodoListApplication {
+public class TodoListApplication extends SpringBootServletInitializer {
+
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(TodoListApplication.class);
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(TodoListApplication.class, args);
